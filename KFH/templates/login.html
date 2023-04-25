@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <form action="" method="post">
+    <p>
+	    <label for="username">Username</label>
+	    <input type="text" name="username">
+	</p>
+	<p>
+	    <label for="password">Password</label>
+	    <input type="password" name="password">
+	</p>
+	<p>
+	    <input type="submit">
+	</p>
+	
+	<p>
+    	<label for="x1">X1</label>
+    	<input type="text" name="x1">
+	</p>
+	<p>
+    	<label for="x2">X2</label>
+    	<input type="text" name="x2">
+	</p>	
+	
+	{% if message2 %}
+        <p>{{ message2 }}</p>
+    {% endif %}
+	
+	
+    </form>
+
+</body>
+</html>
